@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"dht22_lcd\startup_stm32f303xe.o"
+"dht22_lcd\main.o"
+"dht22_lcd\stm32f3xx_it.o"
+"dht22_lcd\stm32f3xx_hal_msp.o"
+"dht22_lcd\lcd.o"
+"dht22_lcd\stm32f3xx_hal_i2c.o"
+"dht22_lcd\stm32f3xx_hal_i2c_ex.o"
+"dht22_lcd\stm32f3xx_hal.o"
+"dht22_lcd\stm32f3xx_hal_rcc.o"
+"dht22_lcd\stm32f3xx_hal_rcc_ex.o"
+"dht22_lcd\stm32f3xx_hal_gpio.o"
+"dht22_lcd\stm32f3xx_hal_dma.o"
+"dht22_lcd\stm32f3xx_hal_cortex.o"
+"dht22_lcd\stm32f3xx_hal_pwr.o"
+"dht22_lcd\stm32f3xx_hal_pwr_ex.o"
+"dht22_lcd\stm32f3xx_hal_flash.o"
+"dht22_lcd\stm32f3xx_hal_flash_ex.o"
+"dht22_lcd\stm32f3xx_hal_exti.o"
+"dht22_lcd\stm32f3xx_hal_tim.o"
+"dht22_lcd\stm32f3xx_hal_tim_ex.o"
+"dht22_lcd\system_stm32f3xx.o"
+--strict --scatter "dht22_lcd\dht22_lcd.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dht22_lcd.map" -o dht22_lcd\dht22_lcd.axf
