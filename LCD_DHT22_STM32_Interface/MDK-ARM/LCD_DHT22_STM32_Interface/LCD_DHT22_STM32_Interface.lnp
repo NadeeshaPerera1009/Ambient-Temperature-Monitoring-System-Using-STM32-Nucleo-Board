@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lcd_dht22_stm32_interface\startup_stm32f303xe.o"
+"lcd_dht22_stm32_interface\main.o"
+"lcd_dht22_stm32_interface\stm32f3xx_it.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_msp.o"
+"lcd_dht22_stm32_interface\lcd.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_i2c.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_i2c_ex.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_rcc.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_rcc_ex.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_gpio.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_dma.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_cortex.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_pwr.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_pwr_ex.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_flash.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_flash_ex.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_exti.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_tim.o"
+"lcd_dht22_stm32_interface\stm32f3xx_hal_tim_ex.o"
+"lcd_dht22_stm32_interface\system_stm32f3xx.o"
+--strict --scatter "LCD_DHT22_STM32_Interface\LCD_DHT22_STM32_Interface.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_DHT22_STM32_Interface.map" -o LCD_DHT22_STM32_Interface\LCD_DHT22_STM32_Interface.axf
